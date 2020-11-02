@@ -37,7 +37,6 @@ public class JobQueue {
         // TODO: replace this code with a faster algorithm.
         assignedWorker = new int[jobs.length];
         startTime = new long[jobs.length];
-        //long[] nextFreeTime = new long[numWorkers];
         Queue<thread> q = new PriorityQueue<thread>(11,lt);
         for (int i = 0; i < numWorkers; i++) {
             q.add (new thread(i));
