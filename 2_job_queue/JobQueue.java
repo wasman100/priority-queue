@@ -49,17 +49,7 @@ public class JobQueue {
             td.next_free_time+=duration;
             q.add(td);
         }
-        /*for (int i = 0; i < jobs.length; i++) {
-            int duration = jobs[i];
-            int bestWorker = 0;
-            for (int j = 0; j < numWorkers; ++j) {
-                if (nextFreeTime[j] < nextFreeTime[bestWorker])
-                    bestWorker = j;
-            }
-            assignedWorker[i] = bestWorker;
-            startTime[i] = nextFreeTime[bestWorker];
-            nextFreeTime[bestWorker] += duration;
-        }*/
+
     }
 
     public void solve() throws IOException {
